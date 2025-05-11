@@ -5,8 +5,9 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    text-align: center;
     padding: 0 5%;
+    text-align: center;
+    
 }
 
 .startpage-container::before {

@@ -9,9 +9,10 @@
     background-repeat: no-repeat;
 
     display: flex;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
-    align-items: center;
+    
     
 }
 

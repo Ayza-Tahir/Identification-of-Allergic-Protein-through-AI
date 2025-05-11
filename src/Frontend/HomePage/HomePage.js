@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div className="homepage-container">
       <div className="homepage-overlay-box">
-        <h2>Identification of Allergic Protein Through AI</h2>
+        <h2>Identification of Allergic Protein Through I</h2>
         <div className="upload-section">
           <label htmlFor="file-upload" className="upload-label">
             <FaUpload className="upload-icon" />
