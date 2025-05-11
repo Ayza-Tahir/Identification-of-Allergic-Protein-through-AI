@@ -1,0 +1,94 @@
+.homepage-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../asset/background.webp');
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.homepage-overlay-box {
+    position: absolute;
+    width: 90%;
+    max-width: 600px;
+    
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.1);
+    
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    box-shadow: 0 0 20px rgba(1, 1, 1, 1);
+    height: 30%;
+   
+    min-height: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage-overlay-box h2 {
+    font-size: 3vw;
+    
+    margin-bottom: 5%;
+   
+}
+.file-name {
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+}
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3% 5%;
+    border-radius: 8px;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.upload-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+   
+}
+
+.upload-input {
+    display: none;
+}
+.result-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.result-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
