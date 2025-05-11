@@ -15,7 +15,7 @@ const StartPage = () => {
 
   return (
     <div className="startpage-container">
-      <h1 className="fade-in-text">Identification of Allergic Protein Through I</h1>
+      <h1 className="fade-in-text">Identification of Allergic Protein Through AI</h1>
     </div>
   );
 };

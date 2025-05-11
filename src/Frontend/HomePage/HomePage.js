@@ -5,6 +5,7 @@ import { FaUpload } from 'react-icons/fa';
 const HomePage = () => {
   const [fileName, setFileName] = useState('');
   const [showResult, setShowResult] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false); 
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -15,14 +16,17 @@ const HomePage = () => {
   };
 
   const handleShowResult = () => {
-  
-    alert('Showing result for: ' + fileName);
+    setModalVisible(true); 
+  };
+
+  const handleCloseModal = () => {
+    setModalVisible(false); 
   };
 
   return (
     <div className="homepage-container">
       <div className="homepage-overlay-box">
-        <h2>Identification of Allergic Protein Through I</h2>
+        <h2>Identification of Allergic Protein Through AI</h2>
         <div className="upload-section">
           <label htmlFor="file-upload" className="upload-label">
             <FaUpload className="upload-icon" />
@@ -42,6 +46,19 @@ const HomePage = () => {
           )}
         </div>
       </div>
+
+      {/* Modal - Results */}
+      {modalVisible && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h3>Result for: {fileName}</h3>
+            <p>Here you can display your result details.</p>
+            <button className="close-modal" onClick={handleCloseModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
