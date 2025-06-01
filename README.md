@@ -1,0 +1,1 @@
+Developed a React-based web app with a Flask API to upload FASTA files and predict the likelihood of protein allergenicity. Integrated machine learning models including Random Forest and XGBoost, with the final prediction made using a fine-tuned Random Forest model for highest accuracy. Displays the percentage of protein vs. non-protein based on the input sequence.
